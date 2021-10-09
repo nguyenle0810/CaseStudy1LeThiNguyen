@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annie Hair Salon</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!--banner-->
+    <section id=banner>
+        <img src="IMAGE/logo.jpg" class=logo>
+        <div class="banner-text">
+            <h1>Annie Hair Salon</h1>
+            <p>Style your hair - Style your life</p>
+            <div class="banner-btn">
+                <a href="#"><span></span>Find Out</a>
+                <a href="#"><span></span>Read More</a>
+            </div>
+        </div>
+    </section>
+    <!--end banner-->
+    <!--SideNav--> 
+    <section id="SideNav">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Testimonial</a></li>
+                <li><a href="#">Meet Us</a></li>
+            </ul>
+        </nav>
+    </section>   
+    <div id="menuBtn">
+        <img src="IMAGE/menu.jpg" id="menu">
+    </div>
+    <!--end SideNav-->    
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var SideNav = document.getElementById("SideNav");
+        var menu = document.getElementById("menu");
+        SideNav.style.right=="-250px";
+        menuBtn.onclick = function(){
+            if(SideNav.style.right == "-250px"){
+                SideNav.style.right="0";
+                menu.scr = "IMAGE/close.png";
+            }else{
+                SideNav.style.right = "-250px";
+                menu.scr = "IMAGE/menu.jpg"
+            }
+        }
+    </script> 
+</body>
+</html>
